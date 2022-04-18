@@ -13,8 +13,8 @@ namespace BookTask.Sql
         {
             using (AppDbContext sql =new AppDbContext())
             {
-                List<Author> authors = new List<Author>();
-                foreach (Author item in authors)
+                List<Author> authors = sql.Authors.ToList();
+                foreach (var item in authors)
                 {
                     Console.WriteLine($"Id {item.Id},Full name {item.SurnameName}");
                 }

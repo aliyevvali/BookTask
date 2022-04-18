@@ -6,7 +6,7 @@ namespace BookTask.Sql
 {
     class SqlSoldBook
     {
-        public static void 
+       
 
     }
 }
