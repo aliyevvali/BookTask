@@ -12,8 +12,8 @@ namespace BookTask.Sql
         public static void GetAllData()
         {
             using (AppDbContext sql = new AppDbContext())
-            {                
-                List<Genre> genres = new List<Genre>();
+            {
+                List<Genre> genres = sql.Genres.ToList(); ;
 
                 foreach (Genre item in genres)
                 {

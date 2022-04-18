@@ -42,7 +42,7 @@ namespace BookTask.Sql
         {
             using (AppDbContext sql = new AppDbContext())
             {
-                List<Publisher> publishers = new List<Publisher>();
+                List<Publisher> publishers = sql.Publishers.ToList(); ;
                 foreach (Publisher item in publishers)
                 {
                     Console.WriteLine($"Id {item.Id},Name {item.Name}");
